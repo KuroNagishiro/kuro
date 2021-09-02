@@ -1,0 +1,12 @@
+<?php
+$id=rand(1,8);
+$image[1]='https://pic.downk.cc/item/5e678f3498271cb2b8c53fd4.jpg';
+$image[2]='https://pic.downk.cc/item/5e678f3498271cb2b8c53fd7.jpg';
+$image[3]='https://pic.downk.cc/item/5e678f3498271cb2b8c53fdd.jpg';
+$image[4]='https://pic.downk.cc/item/5e678f3498271cb2b8c53fe3.jpg';
+$image[5]='https://pic.downk.cc/item/5e678f3498271cb2b8c53fec.jpg';
+$image[6]='https://pic.downk.cc/item/5e67892798271cb2b8c28fde.jpg';
+$image[7]='https://pic.downk.cc/item/5e678f5698271cb2b8c55767.jpg';
+$image[8]='https://pic.downk.cc/item/5e678f5698271cb2b8c5576b.jpg';
+header("location:$image[$id]");
+?>
