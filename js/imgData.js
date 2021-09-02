@@ -3302,37 +3302,14 @@ var randomBgIndex = Math.round(Math.random() * 3294);
 var imgUrl1 = 'https://steamuserimages-a.akamaihd.net/ugc/';
 var imgUrl2 = arr[randomBgIndex];
 var imgUrl = imgUrl1 + imgUrl2;
-console.info(imgUrl);
 
-document.write('<style>body{background-color: #1685a9; width:100%; height:100%; background:url(' + imgUrl + '); background-attachment:fixed; -moz-background-size: cover; -ms-background-size: cover; -webkit-background-size: cover; background-size: cover; background-position: center; z-index: 1;}</style>');
+if($(window).width()<1000 || $(window).height()<1000){
+	document.write('<style>body{background-image: url(https://ae01.alicdn.com/kf/Hb8a25d5356974c4a90462adac158ef3di.png); background-size: cover;}</style>');
+}else{
+	document.write('<style>body{background-color: #1685a9; width:100%; height:100%; background:url(' + imgUrl + '); background-attachment:fixed; -moz-background-size: cover; -ms-background-size: cover; -webkit-background-size: cover; background-size: cover; background-position: center; z-index: 1;}</style>');
+}
+
+// document.write('<style>body{background-color: #1685a9; width:100%; height:100%; background:url(' + imgUrl + '); background-attachment:fixed; -moz-background-size: cover; -ms-background-size: cover; -webkit-background-size: cover; background-size: cover; background-position: center; z-index: 1;}</style>');
 
 
-//屏幕变化时重置输入框宽度
 
-// window.onresize = function() {
-// 	var widthoftextarea = $(window).width();
-// 	//设置背景图大小按比例扩大
-// 	var width_screen = $(window).width();
-// 	var height_screen = $(window).width();
-// 	var wh = width_screen / height_screen;
-// 	var bgurl = 1.6; //背景图宽高比
-// 	if (bgurl > wh) {
-// 		$(“body”).css(“background - size”, ”auto 100 % ”);
-// 	} else {
-// 		$(“body”).css(“background - size”, ”100 % auto”);
-// 	}
-// }
-
-// $(document).ready(function() {
-// 	//设置背景图大小按比例扩大
-// 	var width_screen = $(window).width();
-// 	var height_screen = $(window).width();
-// 	var wh = width_screen / height_screen;
-// 	var bgurl = 1.6; //背景图宽高比
-// 	if (bgurl > wh) {
-// 		$(“body”).css(“background - size”, ”auto 100 % ”);
-// 	} else {
-// 		$(“body”).css(“background - size”, ”100 % auto”);
-// 	}
-
-// });
