@@ -3303,7 +3303,7 @@ var imgUrl1 = 'https://steamuserimages-a.akamaihd.net/ugc/';
 var imgUrl2 = arr[randomBgIndex];
 var imgUrl = imgUrl1 + imgUrl2;
 
-if($(window).width()<1000 || $(window).height()<1000){
+if($(window).width()<1080 || $(window).height()<720){
 	document.write('<style>body{background-image: url(https://ae01.alicdn.com/kf/Hb8a25d5356974c4a90462adac158ef3di.png); background-size: cover;}</style>');
 }else{
 	document.write('<style>body{background-color: #1685a9; width:100%; height:100%; background:url(' + imgUrl + '); background-attachment:fixed; -moz-background-size: cover; -ms-background-size: cover; -webkit-background-size: cover; background-size: cover; background-position: center; z-index: 1;}</style>');
