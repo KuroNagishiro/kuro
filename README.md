@@ -4,7 +4,7 @@
 
 ## 图片
 
-预览[X主页](https://wxnan.gitee.io/x_home_page/) 
+预览[KuroNagishiro的个人导航页](https://kuronagishiro.github.io/kuro/) 
 
 ## 来源    
   
