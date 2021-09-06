@@ -3296,6 +3296,12 @@ arr = [
 	"775101441378818419/128F5ADC15C0AB8EF5B62F5140E75406DEC96F94/"
 ]
 
+arr2 =[
+	"https://pic.imgdb.cn/item/613613a044eaada73904985a.jpg",
+	"https://pic.imgdb.cn/item/613613a044eaada739049864.jpg",
+	"https://pic.imgdb.cn/item/613613a044eaada739049885.png",
+	"https://pic.imgdb.cn/item/613613a044eaada739049919.png"
+]
 
 var randomBgIndex = Math.round(Math.random() * 3294);
 
@@ -3306,7 +3312,9 @@ var imgUrl = imgUrl1 + imgUrl2;
 console.info($(window).width()+":"+$(window).height());
 
 if($(window).width()<1080 && $(window).height()<720){
-	document.write('<style>body{background-image: url(https://ae01.alicdn.com/kf/Hb8a25d5356974c4a90462adac158ef3di.png); background-size: cover;}</style>');
+	var randomBgIndex2 = Math.round(Math.random() *4);
+	var imgUrl3 = arr2[randomBgIndex2];
+	document.write('<style>body{background-image: url('+ imgUrl3 +'); background-size: cover;}</style>');
 }else{
 	document.write('<style>body{background-color: #1685a9; width:100%; height:100%; background:url(' + imgUrl + '); background-attachment:fixed; -moz-background-size: cover; -ms-background-size: cover; -webkit-background-size: cover; background-size: cover; background-position: center; z-index: 1;}</style>');
 }
