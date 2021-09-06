@@ -3300,7 +3300,33 @@ arr2 =[
 	"https://pic.imgdb.cn/item/613613a044eaada73904985a.jpg",
 	"https://pic.imgdb.cn/item/613613a044eaada739049864.jpg",
 	"https://pic.imgdb.cn/item/613613a044eaada739049885.png",
-	"https://pic.imgdb.cn/item/613613a044eaada739049919.png"
+	"https://pic.imgdb.cn/item/613613a044eaada739049919.png",
+	"https://pic.imgdb.cn/item/6136216f44eaada739216333.png",
+	"https://pic.imgdb.cn/item/6136216544eaada73921497c.png",
+	"https://pic.imgdb.cn/item/6136216544eaada739214983.png",
+	"https://pic.imgdb.cn/item/6136216544eaada73921498c.png",
+	"https://pic.imgdb.cn/item/6136216544eaada739214995.png",
+	"https://pic.imgdb.cn/item/6136216544eaada73921499d.png",
+	"https://pic.imgdb.cn/item/6136215844eaada739212e13.png",
+	"https://pic.imgdb.cn/item/6136215844eaada739212e25.jpg",
+	"https://pic.imgdb.cn/item/6136215844eaada739212e30.png",
+	"https://pic.imgdb.cn/item/6136215844eaada739212e42.jpg",
+	"https://pic.imgdb.cn/item/6136215844eaada739212e56.jpg",
+	"https://pic.imgdb.cn/item/6136214544eaada739210252.jpg",
+	"https://pic.imgdb.cn/item/6136214544eaada739210260.png",
+	"https://pic.imgdb.cn/item/6136214544eaada739210268.jpg",
+	"https://pic.imgdb.cn/item/6136214544eaada739210285.jpg",
+	"https://pic.imgdb.cn/item/6136214544eaada739210292.jpg",
+	"https://pic.imgdb.cn/item/6136213244eaada73920d293.png",
+	"https://pic.imgdb.cn/item/6136213244eaada73920d29f.png",
+	"https://pic.imgdb.cn/item/6136213244eaada73920d2b3.jpg",
+	"https://pic.imgdb.cn/item/6136213244eaada73920d2c5.jpg",
+	"https://pic.imgdb.cn/item/6136213244eaada73920d2d9.png",
+	"https://pic.imgdb.cn/item/6136210844eaada7392073f7.jpg",
+	"https://pic.imgdb.cn/item/6136210844eaada739207401.jpg",
+	"https://pic.imgdb.cn/item/6136210844eaada73920740d.jpg",
+	"https://pic.imgdb.cn/item/6136210844eaada739207421.jpg",
+	"https://pic.imgdb.cn/item/6136210844eaada739207432.jpg"
 ]
 
 var randomBgIndex = Math.round(Math.random() * 3294);
@@ -3312,7 +3338,7 @@ var imgUrl = imgUrl1 + imgUrl2;
 console.info($(window).width()+":"+$(window).height());
 
 if($(window).width()<1080 && $(window).height()<720){
-	var randomBgIndex2 = Math.round(Math.random() *4);
+	var randomBgIndex2 = Math.round(Math.random() *30);
 	var imgUrl3 = arr2[randomBgIndex2];
 	document.write('<style>body{background-image: url('+ imgUrl3 +'); background-size: cover;}</style>');
 }else{
