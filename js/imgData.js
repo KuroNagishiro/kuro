@@ -3335,9 +3335,9 @@ var imgUrl1 = 'https://steamuserimages-a.akamaihd.net/ugc/';
 var imgUrl2 = arr[randomBgIndex];
 var imgUrl = imgUrl1 + imgUrl2;
 
-console.info($(window).width()+":"+$(window).height());
 
-if($(window).width()<1080 && $(window).height()<720){
+if($(window).width()<1080 || $(window).height()<720){
+	console.info($(window).width()+":"+$(window).height());
 	var randomBgIndex2 = Math.round(Math.random() *30);
 	var imgUrl3 = arr2[randomBgIndex2];
 	document.write('<style>body{background-image: url('+ imgUrl3 +'); background-size: cover;}</style>');
